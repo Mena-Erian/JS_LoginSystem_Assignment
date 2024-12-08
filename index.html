@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>login system</title>
+        <link
+            rel="shortcut icon"
+            href="images/icon-test.jpeg"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <nav class="d-none navbar navbar-expand-md fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#">SMART LOGIN</a>
+                <button
+                    class="navbar-toggler bg-white"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon text-white-50"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse justify-content-end"
+                    id="navbarSupportedContent"
+                >
+                    <div class="d-flex pt-3 pb-1" role="search">
+                        <button
+                            id="logoutBtn"
+                            class="btn w-100 btn-outline-warning"
+                            type="submit"
+                        >
+                            Log out
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <header
+            id="mainHeader"
+            class="vh-100 d-flex align-items-center justify-content-center"
+        >
+            <form id="loginForm" class="mx-auto w-75 p-4 text-center">
+                <h1 class="text-info">Smart Login System</h1>
+                <input
+                    class="form-control my-4 bg-transparent text-white"
+                    type="email"
+                    placeholder="Enter your email"
+                    aria-label="default input example"
+                    name="email"
+                />
+                <input
+                    class="form-control mt-4 bg-transparent text-white"
+                    type="password"
+                    name="pass"
+                    placeholder="Enter your password"
+                    aria-label="default input example"
+                />
+                <p class="log-val text-success p-0 my-2"></p>
+                <button
+                    id="loginBtn"
+                    type="submit"
+                    class="btn w-100 btn-outline-info mt-2 mb-4"
+                >
+                    Login
+                </button>
+                <p class="text-white">
+                    Don’t have an account?
+                    <a
+                        href="#"
+                        class="link-light text-decoration-none text-nowrap"
+                        >Sign Up</a
+                    >
+                </p>
+            </form>
+            <form id="signUpForm" class="d-none mx-auto w-75 p-4 text-center">
+                <h1 class="text-info">Smart Login System</h1>
+                <input
+                    class="form-control my-4 bg-transparent text-white"
+                    type="text"
+                    name="uName"
+                    placeholder="Enter your name"
+                    aria-label="default input example"
+                />
+                <input
+                    class="form-control my-4 bg-transparent text-white"
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    aria-label="default input example"
+                />
+                <input
+                    class="form-control mt-4 bg-transparent text-white"
+                    type="password"
+                    name="pass"
+                    placeholder="Enter your password"
+                    aria-label="default input example"
+                />
+                <p class="log-val text-success p-0 my-2"></p>
+                <button
+                    type="submit"
+                    class="btn w-100 btn-outline-info mt-2 mb-4"
+                >
+                    Sign Up
+                </button>
+                <p class="text-white">
+                    You have an account?
+                    <a
+                        href="#"
+                        class="link-light text-decoration-none text-nowrap"
+                        >Sign in</a
+                    >
+                </p>
+            </form>
+        </header>
+        <header
+            id="welcomePage"
+            class="vh-100 d-none align-items-center justify-content-center"
+        >
+            <div class="form-frame mx-auto w-75 p-4 text-center">
+                <h1 class="text-info">welcome Mena erian</h1>
+            </div>
+        </header>
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
